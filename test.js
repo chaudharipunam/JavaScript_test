@@ -42,9 +42,6 @@
 
 
 
-// Given a string containing just the characters '(', ')', '{', '}', '[' and ']', 
-// determine if the input string is valid.
-
 
 // Given an array 'nums' of n integers where n > 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
 // function produAllExcOneIndex(array){
@@ -68,23 +65,18 @@
 
 
 
-
-function kthLargestEle(arr, kthNo) {
-    // Bubble sort to sort the array in ascending order
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = 0; j < arr.length - 1 - i; j++) {
-            if (arr[j] > arr[j + 1]) {
-                let temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
+// Find the kth largest element in an unsorted array.
+function kthLargestEle(arr,kthNo){
+    for(let i=0; i<arr.length; i++){
+        for(let j=0; j<arr.length-1-i; j++){
+            if(arr[j]>arr[j+1]){
+                let temp=arr[j];
+                arr[j]=arr[j+1];
+                arr[j+1]=temp;
             }
         }
     }
-    let index = arr.length - kthNo;
-    if (index >= 0 && index < arr.length) {
-        console.log(arr[index]);
-    } else {
-        console.log("Invalid k-th number");
-    }
+    let p=arr.length-kthNo;
+        console.log(arr[p]);
 }
-kthLargestEle([23, 45, 21, 78, 7, 99, 47],5);
+kthLargestEle([23, 45, 21, 78, 7, 99, 47],4);
