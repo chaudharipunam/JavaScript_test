@@ -66,17 +66,47 @@
 
 
 // Find the kth largest element in an unsorted array.
-function kthLargestEle(arr,kthNo){
-    for(let i=0; i<arr.length; i++){
-        for(let j=0; j<arr.length-1-i; j++){
-            if(arr[j]>arr[j+1]){
-                let temp=arr[j];
-                arr[j]=arr[j+1];
-                arr[j+1]=temp;
-            }
-        }
-    }
-    let p=arr.length-kthNo;
-        console.log(arr[p]);
-}
-kthLargestEle([23, 45, 21, 78, 7, 99, 47],4);
+// function kthLargestEle(arr,kthNo){
+//     for(let i=0; i<arr.length; i++){
+//         for(let j=0; j<arr.length-1-i; j++){
+//             if(arr[j]>arr[j+1]){
+//                 let temp=arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1]=temp;
+//             }
+//         }
+//     }
+//     let p=arr.length-kthNo;
+//         console.log(arr[p]);
+// }
+// kthLargestEle([23, 45, 21, 78, 7, 99, 47],4);
+
+
+
+
+
+
+//  Given n non-negative integers representing the heights of walls, 
+// find the maximum area of water that can be trapped between the walls.
+
+// 1 * 9  = 9
+// 2 * 2  = 4
+// 3 * 10 = 30
+// 4 * 4  = 16
+// 5 * 5  = 25
+
+// function maxArea(arr){
+//     let c=1;
+//     let max=0;
+//     let p;
+//     for(let i=0; i<arr.length; i++){
+//         p = arr[i]*c;
+//         c++;
+//     }
+//     if(p>max){
+//         console.log(max=p);
+//     }
+// }
+// maxArea([7,9,2,10,4,5]);
+
+
