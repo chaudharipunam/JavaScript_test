@@ -46,16 +46,6 @@
 // determine if the input string is valid.
 
 
-// Given an integer array, return all possible subsets (the power set).
-
-// function lengthLargestSubstring(arr){
-//     let Length = 2** arr.length;
-//     console.log(Length);
-// }
-
-// lengthLargestSubstring([5,6,7,3]);
-
-
 // Given an array 'nums' of n integers where n > 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
 // function produAllExcOneIndex(array){
 //     let a=[];
