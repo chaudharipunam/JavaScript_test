@@ -110,3 +110,24 @@
 // maxArea([7,9,2,10,4,5]);
 
 
+
+
+
+//  Given an integer array, return all possible subsets (the power set).
+function subset(arr){
+    let a=[[]]; 
+    for(let i=0; i<arr.length; i++){
+        let Len=a.length;
+        for(let j=0; j<Len; j++){
+            let newSub=[];
+            let oldSub=a[j];
+            for (let k=0; k<oldSub.length; k++){
+                newSub[newSub.length]=oldSub[k];
+            }
+            newSub[newSub.length]=arr[i];
+            a[a.length]=newSub;
+        }
+    }
+    console.log(a);
+}
+subset([34,6,90,8]);
